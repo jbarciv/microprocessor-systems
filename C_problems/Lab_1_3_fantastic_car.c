@@ -1,12 +1,12 @@
 /**************************************************************
-* 	Lab practice 1
-*  	Exercise 3
-*  	Author: Josep Barbera
-*  	Date: 20 March 2022
+*	Lab practice 1
+*	Exercise 3
+*	Author: Josep Barbera
+*	Date: 20 March 2022
 *
-*	Shifting the light alternately from right to left between 
-*  	the 8 LEDs with a software delay of 0.1 s between each 
-*  	displacement.
+*	Shifting the light alternately from right to left between
+*	the 8 LEDs with a software delay of 0.1 s between each
+*	displacement.
 ***************************************************************/ 
 
 #include <avr/io.h>
