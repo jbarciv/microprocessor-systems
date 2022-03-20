@@ -1,2 +1,2 @@
 # microprocessor-systems
-Solution of academic exercises in C and Assembler language.
+Solution of academic exercises in C and Assembly.
