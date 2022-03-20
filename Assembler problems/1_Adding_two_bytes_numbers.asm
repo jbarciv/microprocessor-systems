@@ -1,6 +1,7 @@
 ;**************************************************************
 ;*  Academic Exercise 1
 ;*  Author: Josep Barbera
+;*  Date: 20 March 2022
 ;*  
 ;*  A code that adds two two-byte numbers placed in memory 
 ;*  locations SumA and SumB and leaves the result in 
