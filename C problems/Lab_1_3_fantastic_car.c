@@ -1,12 +1,17 @@
-/*
- * Fantastic_car.c
- *
- * Created: 08/03/2022 17:15:06
- * Author : General
- */ 
+/**************************************************************
+* 	Lab practice 1
+*  	Exercise 3
+*  	Author: Josep Barbera
+*  	Date: 20 March 2022
+*
+*	Shifting the light alternately from right to left between 
+*  	the 8 LEDs with a software delay of 0.1 s between each 
+*  	displacement.
+***************************************************************/ 
 
 #include <avr/io.h>
 void delay(float );
+
 float a;
 
 int main(void)
@@ -34,7 +39,8 @@ int main(void)
 
 void delay(float t)
 {
-	for (a=0;a<t;a++){
+	for (a=0;a<t;a++)
+	{
 		;
 	}
 }
