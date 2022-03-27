@@ -2,7 +2,7 @@
 ;*  Lab practice 1
 ;*  Exercise 1
 ;*  Author: Josep Barbera
-;*  Date: 20 March 2022
+;*  Date: 20/03/2022
 ;*  
 ;*  Display the status of 8 buttons connected to two different 
 ;*  I/O ports (Ports A and B) on 8 LEDs connected to another 

@@ -2,7 +2,7 @@
 ;*  Lab practice 1
 ;*  Exercise 2
 ;*  Author: Josep Barbera
-;*  Date: 20 March 2022
+;*  Date: 20/03/2022
 ;*
 ;*  Shifting the light alternately from right to left between 
 ;*  the 8 LEDs with a software delay of 0.1 s between each 

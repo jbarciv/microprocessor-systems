@@ -1,7 +1,7 @@
 ;***************************************************************
 ;*  Academic Exercise 3
 ;*  Author: Josep Barbera
-;*  Date: 20 March 2022
+;*  Date: 20/03/2022
 ;*  
 ;*  Subroutine that searches for a given character within a 
 ;*  character string (ending with the character '\0'). 
