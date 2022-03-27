@@ -18,15 +18,15 @@ Init:
     OUT DDRE, r16   ; setting to '0' the desired pins
 
     ; Port J configuration (as Input) -> DDRJ
-    ; Input pins: 00001111=0x0f. In DDRJ, inputs are '0's
-    ; ~(0x0f)=0xf0=0b11110000 for ANDI
+    ; Input pins: 00001111=0x0F. In DDRJ, inputs are '0's
+    ; ~(0x0F)=0xF0=0b11110000 for ANDI
     LDS r16, DDRJ    ; checking current DDRJ status
-    ANDI r16, 0xf0  
+    ANDI r16, 0xF0  
     STS  DDRJ, r16  ; setting to '0' the desired pins
 
     ; Port C configuration (as Output) -> DDRC
-    ; Output pins: 11111111=0xff. In DDRC, outputs are '1's
-    LDI r16, 0xff
+    ; Output pins: 11111111=0xFF. In DDRC, outputs are '1's
+    LDI r16, 0xFF
     OUT DDRC, r16   ; setting to '1' all DDRC pins
 
 Start:
@@ -34,7 +34,7 @@ Start:
     ANDI r16, 0x87  ; removing undesired pins
     RCALL LightE    
     LDS r17, PINJ    ; reading PINJ
-    ANDI r17, 0x0f  ; removing undesired pins
+    ANDI r17, 0x0F  ; removing undesired pins
     RCALL LightJ
     OR r16, r17     ; adding LSB and MSB for output
     OUT PORTC, r16  ; setting PORTC according to inputs
