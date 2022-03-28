@@ -1,6 +1,6 @@
 # microprocessor-systems
 
-**Microprocessor-systems** collects specialised code for microprocessor systems for academic use. You can find basic exercises or more specialised labs. The `ATmega640` microprocessor of the *AVR-family* has been used for testing code using `Microchip Studio`.
+**Microprocessor-systems** collects code in Assembly and C for the basic use of microprocessor systems. You can find basic exercises or more specialised labs. The `ATmega640` microprocessor of the *AVR-family* has been used for testing code using `Microchip Studio`.
 
 ## Motivation
 
