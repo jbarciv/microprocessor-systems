@@ -1,8 +1,8 @@
 /***************************************************************
-* 	Lab practice 2
-*  	Exercise 3
-*  	Author: Josep Barbera
-*  	Date: 22 March 2022
+*	Lab practice 2
+*	Exercise 3
+*	Author: Josep Barbera
+*	Date: 22 March 2022
 *
 *	Change the state of the LEDs periodically (every 0.5 s  
 *	approximately) using an external library and callbacks.
@@ -16,22 +16,19 @@ unsigned char c;
 void change()
 {
 	c++;
-	if(c==5)
-	{
+	if (c == 5){
 		PORTC = ~PINC;
-		c=0;
+		c = 0;
 	}
 }
 
-int main(void)
-{
+int main(void){
 	cli();
 	DDRC = 0xFF;
-    setupPeriodicInt();
+	setupPeriodicInt();
 	setPeriodicIntCallback(change);
 	sei();
-    while (1)
-    {
-        /*whatever*/
-    }
+	while (1){
+		/*whatever*/
+	}
 }

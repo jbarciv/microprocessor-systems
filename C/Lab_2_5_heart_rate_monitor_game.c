@@ -1,16 +1,16 @@
 /****************************************************************
-* 	Lab practice 2
-*  	Exercise 5
-*  	Author: Josep Barbera
-*  	Date: 22 March 2022
+*	Lab practice 2
+*	Exercise 5
+*	Author: Josep Barbera
+*	Date: 22 March 2022
 *
 *	Heart rate monitor. Create a game where the student presses 
-* 	a button as fast as he/she can and the number of presses per 
+*	a button as fast as he/she can and the number of presses per 
 *	unit of time (for example every 3 tenths of a second) is 
 *	continuously displayed on the led bar.
-
+*
 *	For this purpose, a time window or time base of 3 tenths must 
-* 	be set (based on the time interrupt library), during which 
+*	be set (based on the time interrupt library), during which 
 *	the number of presses per external interrupt on one of the 
 *	buttons on the I/O board is counted, and at the end of each
 *	period the number of presses is displayed on the LED bar.
@@ -25,10 +25,10 @@
 
 unsigned char i=0;
 unsigned char pulse=0;
-void toggle()
-{
-	if(i == 3){ /* time window of 3 tenths of a second */
-		switch(pulse){
+
+void toggle (){
+	if (i == 3){ /* time window of 3 tenths of a second */
+		switch (pulse){
 			case 1: 
 				PORTC = 0b00000001;
 				break;
@@ -46,13 +46,13 @@ void toggle()
 				break;
 			default: PORTC=0x00;
 		}
-		i=0;
-		pulse=0;
+		i = 0;
+		pulse = 0;
 	}
 	i++;
 }
 
-ISR(INT7_vect){
+ISR (INT7_vect){
 	pulse++;
 }
 
@@ -63,11 +63,11 @@ int main(void){
 	EICRB = 0x80;
 	EIMSK = 0x80;
 	EIFR = 0x80;
-    setupPeriodicInt();
+	setupPeriodicInt();
 	setPeriodicIntCallback(toggle);
 	sei();
 
-    while (1){
-    }
+	while (1){
+	}
 }
 

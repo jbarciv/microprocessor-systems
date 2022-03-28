@@ -1,8 +1,8 @@
 /***************************************************************
-* 	Lab practice 1
-*  	Exercise 4
-*  	Author: Josep Barbera
-*  	Date: 20 March 2022
+*	Lab practice 1
+*	Exercise 4
+*	Author: Josep Barbera
+*	Date: 20 March 2022
 *
 *	A keypad scanning function that displays by LEDs the 
 *	row/column code of the last key pressed (by row/column code 
@@ -17,17 +17,14 @@
 
 int main(void)
 {
-	DDRC = 0x0f;
-	DDRA = 0xff;
-	int scan=0x01;
+	DDRC = 0x0F;
+	DDRA = 0xFF;
+	int scan = 0x01;
 	int i;
-	while (1)
-	{	
-		for (i=0 ; i<3 ; i++)
-		{
+	while (1){	
+		for (i=0 ; i<3 ; i++){
 			PORTC = scan;
-			if((PINC & 0xf0))
-			{
+			if (PINC & 0xf0){
 				PORTA = PORTC;
 			} 
 			scan = scan << 1;
