@@ -1,9 +1,14 @@
-/*
- * coche_fantastico_interrupciones.c
- *
- * Created: 22/03/2022 16:51:55
- * Author : General
- */ 
+/***************************************************************
+* 	Lab practice 2
+*  	Exercise 4
+*  	Author: Josep Barbera
+*  	Date: 22 March 2022
+*
+*	Exercise of the fantastic car from the previous practice 
+* 	(Lab_1_3), with 0.1 seconds delay for the LED-to-LED jumps, 
+*	but using the functions of the provided temporary interrupts 
+*	library. 
+****************************************************************/
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
