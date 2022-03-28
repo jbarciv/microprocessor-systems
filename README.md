@@ -14,14 +14,14 @@ This compilation has three main objectives:
 
 The next respository has two main folders, each for a different programming language. Within each folder you can find basic examples properly labelled and more specialised code files (starting with the word 'lab').
 
-## Prerequisites
+<!-- ## Prerequisites -->
 
-## Installation
+<!-- ## Installation -->
 
-## Usage
+<!-- ## Usage -->
 
 ## References
 
 Most of the exercises and code solutions have been provided by Yago Tarroja and Jorge Portilla, professors at the Technical University of Madrid at the electronic engineering department ([DIE](http://www.upmdie.etsii.upm.es/)). 
 
-## Acknowldegements
+<!-- ## Acknowldegements -->
