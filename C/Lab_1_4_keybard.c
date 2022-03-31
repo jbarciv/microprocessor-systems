@@ -1,4 +1,4 @@
-/***************************************************************
+/**************************************************************************
 *	Lab practice 1
 *	Exercise 4
 *	Author: Josep Barbera
@@ -11,20 +11,20 @@
 *	the bit of the column that is being scanned and the bit of  
 *	the row whose key has been pressed. The value must remain  
 *	fixed in the LEDs until another key is pressed again).
-****************************************************************/
+*************************************************************************/
 
 #include <avr/io.h>
 
 int main(void)
-{
-	DDRC = 0x0F;
-	DDRA = 0xFF;
+{	
+	DDRC = 0xF0; /* DDRC0-3 as input, DDRC4-7 as output*/
+	DDRA = 0xFF; /* DDRA0-7 as output*/	
 	int scan = 0x01;
 	int i;
 	while (1){	
 		for (i=0 ; i<3 ; i++){
 			PORTC = scan;
-			if (PINC & 0xf0){
+			if (PINC & 0x0F){
 				PORTA = PORTC;
 			} 
 			scan = scan << 1;
