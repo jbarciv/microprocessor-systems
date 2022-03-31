@@ -25,17 +25,15 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include "Int01s.h"
+#include "Int01s.h"				/*¿Es necesario? Creo que no hace falta*/
 
 unsigned char scan = 0x01;
 unsigned char i = 0;
 
 ISR (PCINT2_vect){
-// 	for (i=0 ; i<3 ; i++)
-// 	{
+// 	for (i=0 ; i<3 ; i++){
 // 		PORTK = scan;
-// 		if(PINK && 0xf0)
-// 		{
+// 		if(PINK & 0xF0){
 // 			PORTB = PORTK;
 // 		}
 // 		scan = scan << 1;
@@ -47,7 +45,7 @@ ISR (PCINT2_vect){
 int main(void){
 	DDRB = 0xFF;
 	cli();
-	DDRK = 0x0F;
+	DDRK = 0xF0;
 	PCICR = 0x04; // pongo a 1 el pin 2  => habilito el registro 2
 	PCMSK2 = 0xF0;
 	PCIFR = 0x04;
