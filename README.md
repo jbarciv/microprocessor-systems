@@ -22,6 +22,6 @@ The next respository has two main folders, each for a different programming lang
 
 ## References
 
-Most of the exercises and code solutions have been provided by Yago Tarroja and Jorge Portilla, professors at the Technical University of Madrid at the electronic engineering department ([DIE](http://www.upmdie.etsii.upm.es/)). 
+Most of the exercises and code solutions have been provided by Yago Tarroja and Jorge Portilla, professors at the Technical University of Madrid at the electronic engineering department ([CEI](http://www.cei.upm.es/)). 
 
 <!-- ## Acknowldegements -->
