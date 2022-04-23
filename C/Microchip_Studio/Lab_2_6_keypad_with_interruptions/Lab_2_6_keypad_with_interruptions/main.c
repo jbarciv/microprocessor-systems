@@ -20,7 +20,8 @@
 *	again, which will provoke new interrupt requests).
 ********************************************************************/
 
-/*NEED TO BE TRANSLATED BETTER*/
+/* --> CAUTION <-- */
+/*NOT FINISHED... UNDER CONSTRUCTION!!!!*/
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -43,19 +44,19 @@ ISR (PCINT2_vect){
 	 	scan = scan << 1;
 	 }
  	scan = 0x01;
-	PCIFR = 0X04;	//bajamos banderas de interrupciÃ³n
+	PCIFR = 0X04;	//bajamos banderas de interrupción
 	 
 }
 
-// emplearÃ© el resgistro 2 para la interrupciÃ³n externa
-// pues usarÃ© el conector J1 para tener desde PCINT 16 a PCINT 23 = registro 2
+// emplearé el resgistro 2 para la interrupción externa
+// pues usaré el conector J1 para tener desde PCINT 16 a PCINT 23 = registro 2
 
 int main(void){
 	DDRB = 0xFF;	// todos los LEDs como salida. 
-	DDRK = 0x0F;	// PK(0:3) salida(1); PK(4:7) entrada(0)
+	DDRK = 0x0F;	// PK(0:3) salida(1); PK(4:7) entrada (0)
 	cli();
 	PCICR = 0x04;	// pongo a 1 el pin 2  => habilito el registro 2
-	PCMSK2 = 0xF0;	// habilitar interrupciÃ³n en filas del keypad
+	PCMSK2 = 0xF0;	// habilitar interrupción en filas del keypad
 	PCIFR = 0x04;
 	sei();
 
@@ -63,7 +64,4 @@ int main(void){
 		PORTK = 0X0F;
 	}
 }
-
-
-
 
