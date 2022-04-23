@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega640"</DEVICE>
+ <WORKING_DIR>D:\Sistemas Microprocesadores\updated_needs_to_be_finished\Assembly\Projects\Lab_2_1_button_interruption\Lab_2_1_button_interruption\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Sistemas Microprocesadores\updated_needs_to_be_finished\Assembly\Projects\Lab_2_1_button_interruption\Lab_2_1_button_interruption\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m640def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Sistemas Microprocesadores\updated_needs_to_be_finished\Assembly\Projects\Lab_2_1_button_interruption\Lab_2_1_button_interruption\Debug\Lab_2_1_button_interruption.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab_2_1_button_interruption.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab_2_1_button_interruption.map</FILE>
+  <FILE>Lab_2_1_button_interruption.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <setup><FILE>D:\Sistemas Microprocesadores\updated_needs_to_be_finished\Assembly\Projects\Lab_2_1_button_interruption\Lab_2_1_button_interruption\main.asm</FILE><LINE>19</LINE></setup>
+  <rutina><FILE>D:\Sistemas Microprocesadores\updated_needs_to_be_finished\Assembly\Projects\Lab_2_1_button_interruption\Lab_2_1_button_interruption\main.asm</FILE><LINE>34</LINE></rutina>
+  <bucle><FILE>D:\Sistemas Microprocesadores\updated_needs_to_be_finished\Assembly\Projects\Lab_2_1_button_interruption\Lab_2_1_button_interruption\main.asm</FILE><LINE>31</LINE></bucle>
+ </LABELS>
+</ASSEMBLER_INFO>
